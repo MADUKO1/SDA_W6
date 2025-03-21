@@ -8,7 +8,10 @@ int main() {
 
     do {
         displayMenu();
-        scanf("%d", &pilihan);
+        if (scanf("%d", &pilihan) != 1) {
+            while (getchar() != '\n'); 
+            continue; 
+        }
         
         switch (pilihan) {
             case 1:
@@ -31,6 +34,12 @@ int main() {
             default:
                 printf("Pilihan tidak valid, silakan coba lagi.\n");
         }
+
+        printf("Press Enter");
+        while (getchar() != '\n'); 
+        getchar(); 
+        system("cls");
+
     } while (pilihan != 4);
 
     return 0;
