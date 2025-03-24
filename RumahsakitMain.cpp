@@ -28,6 +28,7 @@ int main() {
     while (1) {
         menu();
         scanf("%d", &pilihan);
+        getchar(); 
         
         switch (pilihan) {
             case 1:
@@ -46,6 +47,7 @@ int main() {
             case 3:
                 printf("Masukkan kode tindakan medis (angka): ");
                 scanf("%d", &tindakan);
+                getchar();
                 pushStack(&riwayatTindakan, tindakan);
                 printf("Tindakan medis %d dicatat dalam riwayat.\n", tindakan);
                 break;
@@ -62,5 +64,7 @@ int main() {
             default:
                 printf("Pilihan tidak valid!\n");
         }
+        printf("\nTekan Enter");
+        getchar(); 
     }
 }
