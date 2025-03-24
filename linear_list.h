@@ -1,5 +1,5 @@
-    #ifndef Linear_LIst_H
-    #define Linear_List_H
+    #ifndef LINEAR_LIST_H
+    #define LINEAR_LIST_H
 
     #include <stdio.h>
     #include <stdlib.h>
